@@ -7,7 +7,7 @@ const listYear = (year, data) => (
   </div>
 );
 
-const parseYear = (date) => {
+export const parseYear = (date) => {
   const reYear = new RegExp(/(\d{4})/);
   return Number(date.match(reYear)[0]);
 };

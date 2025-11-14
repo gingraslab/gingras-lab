@@ -85,7 +85,8 @@
   height: auto;
 }
 
-.people__photos .christmas-2018 {
+.people__photos .christmas-2018,
+.people__photos .christmas-2024 {
   width: 1180px;
 }
 .people__photos .appreciation-day-2018 {
@@ -94,6 +95,40 @@
 
 .people__photos .center-island-2023,
 .people__photos .cherry-picking-2023,
-.people__photos .LTRI-retreat-2023 {
+.people__photos .LTRI-retreat-2023,
+.people__photos .LTRI-retreat-2025 {
   width: 100%;
+}
+
+.people__card {
+  position: relative;
+}
+.people__blurb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  max-height: 100%; 
+}
+.people__card:hover .people__blurb {
+  opacity: 1;
+  pointer-events: auto;
+}
+.people__group-section {
+  margin-bottom: 3rem;
+}
+
+.people__group-header {
+  margin-bottom: 1rem;
+  text-align: left;
 }

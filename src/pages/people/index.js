@@ -38,22 +38,31 @@ export const query = graphql`{
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
-  centerIsland2022: file(relativePath: {eq: "group/2023-center-island.jpg"}) {
+  centerIsland2023: file(relativePath: {eq: "group/2023-center-island.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
-  cherryPicking2022: file(relativePath: {eq: "group/2023-cherry-picking.jpg"}) {
+  cherryPicking2023: file(relativePath: {eq: "group/2023-cherry-picking.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
-  LTRIRetreat2022: file(relativePath: {eq: "group/2023-LTRI-retreat.jpg"}) {
+  LTRIRetreat2023: file(relativePath: {eq: "group/2023-LTRI-retreat.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
-  
+  christmas2024: file(relativePath: {eq: "group/2024-christmas.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
+    }
+  }
+  LTRIRetreat2025: file(relativePath: {eq: "group/2025-LTRI-retreat.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
+    }
+  }
 }
 `;
 
@@ -97,29 +106,17 @@ const People = ({ data }) => {
             />
           </header>
           <div className="people__photos">
-            <figure className="christmas-2018">
+            <figure className="LTRI-retreat-2025">
               <GatsbyImage
-                image={data.christmas2018.childImageSharp.gatsbyImageData}
-                alt="Christmas party, 2018" />
-              <figcaption>Christmas party, 2018.</figcaption>
+                image={data.LTRIRetreat2025.childImageSharp.gatsbyImageData}
+                alt="LTRI Retreat 2025" />
+              <figcaption>LTRI Retreat, 2025.</figcaption>
             </figure>
-            <figure className="appreciation-day-2018">
+            <figure className="christmas-2024">
               <GatsbyImage
-                image={data.appreciationDay2018.childImageSharp.gatsbyImageData}
-                alt="Staff appreciation day, 2018" />
-              <figcaption>Staff appreciation day, 2018.</figcaption>
-            </figure>
-            <figure className="center-island-2023">
-              <GatsbyImage
-                image={data.centerIsland2023.childImageSharp.gatsbyImageData}
-                alt="Center Island 2023" />
-              <figcaption>Center Island, 2023.</figcaption>
-            </figure>
-            <figure className="cherry-picking-2023">
-              <GatsbyImage
-                image={data.cherryPicking2023.childImageSharp.gatsbyImageData}
-                alt="Cherry Picking 2023" />
-              <figcaption>Cherry Picking, 2023.</figcaption>
+                image={data.christmas2024.childImageSharp.gatsbyImageData}
+                alt="Christmas party, 2024" />
+              <figcaption>Christmas party, 2024.</figcaption>
             </figure>
             <figure className="LTRI-retreat-2023">
               <GatsbyImage
@@ -127,7 +124,30 @@ const People = ({ data }) => {
                 alt="LTRI Retreat 2023" />
               <figcaption>LTRI Retreat, 2023.</figcaption>
             </figure>
-
+            <figure className="cherry-picking-2023">
+              <GatsbyImage
+                image={data.cherryPicking2023.childImageSharp.gatsbyImageData}
+                alt="Cherry Picking 2023" />
+              <figcaption>Cherry Picking, 2023.</figcaption>
+            </figure>
+            <figure className="center-island-2023">
+              <GatsbyImage
+                image={data.centerIsland2023.childImageSharp.gatsbyImageData}
+                alt="Center Island 2023" />
+              <figcaption>Center Island, 2023.</figcaption>
+            </figure>
+            <figure className="appreciation-day-2018">
+              <GatsbyImage
+                image={data.appreciationDay2018.childImageSharp.gatsbyImageData}
+                alt="Staff appreciation day, 2018" />
+              <figcaption>Staff appreciation day, 2018.</figcaption>
+            </figure>
+            <figure className="christmas-2018">
+              <GatsbyImage
+                image={data.christmas2018.childImageSharp.gatsbyImageData}
+                alt="Christmas party, 2018" />
+              <figcaption>Christmas party, 2018.</figcaption>
+            </figure>
           </div>
         </section>
         <section>
@@ -186,6 +206,16 @@ People.propTypes = {
       }).isRequired,
     }).isRequired,
     LTRIRetreat2023: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        gatsbyImageData: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+    christmas2024: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        gatsbyImageData: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+    LTRIRetreat2025: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,

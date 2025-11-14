@@ -6,6 +6,7 @@ import Link from '../../components/link/link';
 
 import formatNews from '../../components/news/format-news';
 import news from '../../components/news/news-list';
+import NewsYears from '../../components/news/news-years';
 
 import NewsPaper from '../../images/icon/newspaper.svg';
 import UserSearch from '../../images/icon/user-search.svg';
@@ -85,20 +86,7 @@ const News = () => (
             src={NewsPaper}
           />
         </header>
-        <div className="news__years">
-          <Link to="/news/#2021">2021</Link>
-          <Link to="/news/#2020">2020</Link>
-          <Link to="/news/#2019">2019</Link>
-          <Link to="/news/#2018">2018</Link>
-          <Link to="/news/#2017">2017</Link>
-          <Link to="/news/#2016">2016</Link>
-          <Link to="/news/#2015">2015</Link>
-          <Link to="/news/#2014">2014</Link>
-          <Link to="/news/#2013">2013</Link>
-          <Link to="/news/#2012">2012</Link>
-          <Link to="/news/#2011">2011</Link>
-          <Link to="/news/#2010">2010</Link>
-        </div>
+        <NewsYears articles={news} />
         {formatNews(news)}
       </section>
     </div>

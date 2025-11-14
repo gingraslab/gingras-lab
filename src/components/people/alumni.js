@@ -11,10 +11,6 @@ const alumni = [
     role: 'Postdoctoral Fellow',
   },
   {
-    name: 'Bhavisha Rathod',
-    role: 'Lab Manager',
-  },
-  {
     name: 'Beatriz Gonzalez-Badillo',
     role: 'Technician',
   },
@@ -36,11 +32,6 @@ const alumni = [
     name: 'Dushyandi Rajendran',
     position: 'Global Study Associate, AstraZeneca',
     role: 'Lab Manager',
-  },
-  {
-    name: 'Geoffrey Hesketh',
-    position: 'Assistant Professor, Dalhousie University',
-    role: 'Postdoctoral Fellow',
   },
   {
     name: 'Ginny Chen',
@@ -163,6 +154,58 @@ const alumni = [
   {
     name: 'Brett Larsen',
     role: 'Mass spectrometry coordinator',
+  },
+  {
+    name: 'Claire Martin',
+    role: 'Postdoctoral fellow',
+  },
+  {
+    name: 'Jonathan Roth',
+    role: 'Graduate Student',
+  },
+  {
+    name: 'Aparna Srinivasan',
+    role: 'Graduate Student',
+  },
+  {
+    name: 'Nicolas Grinberg',
+    role: 'Graduate Student',
+  },
+  {
+    name: 'Raktan Ahmed',
+    role: 'Graduate Student',
+  },
+  {
+    name: 'Monica Dayam',
+    role: 'Research Associate',
+  },
+  {
+    name: 'Geneviève Mailhot',
+    role: 'Research technician',
+  },
+  {
+    name: 'Melanie Delgado-Brand',
+    role: 'Research technician',
+  },
+  {
+    name: 'Tulunay Tursun',
+    role: 'Research technician',
+  },
+  {
+    name: 'Alexandra Kurtesi',
+    role: 'Student research assistant',
+  },
+  {
+    name: 'Kento Abe',
+    role: 'Postdoctoral fellow',
+  },
+  {
+    name: 'Jayco Cheng',
+    role: 'Summer student',
+  },
+  {
+    name: 'Laura McGary',
+    role: 'Research Technician II',
   },
 ];
 

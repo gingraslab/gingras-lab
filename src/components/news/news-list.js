@@ -4,25 +4,25 @@ import React from 'react';
 import Link from '../link/link';
 
 const newsItems = [
-  {
-    date: 'Dec 9, 2021',
-    title: 'Four available positions in the lab',
-    text: (
-      <>
-        Four positions are available immediately in our group: 3 are temporary (currently = one year contract) to
-        assist in our important profiling of the humoral response to SARS-CoV-2; 1 is permanent, to work within our
-        proteomics and molecular biology team. See our 
-        {' '}
-        <Link to="/news#openings">job listings</Link>
-        {' '}
-        for full details.
-        {' '}
-        <strong>
-          Update February 2022: these positions have been filled.
-        </strong>
-      </>
-    ),
-  },
+  // {
+  //   date: 'Dec 9, 2021',
+  //   title: 'Four available positions in the lab',
+  //   text: (
+  //     <>
+  //       Four positions are available immediately in our group: 3 are temporary (currently = one year contract) to
+  //       assist in our important profiling of the humoral response to SARS-CoV-2; 1 is permanent, to work within our
+  //       proteomics and molecular biology team. See our 
+  //       {' '}
+  //       <Link to="/news#openings">job listings</Link>
+  //       {' '}
+  //       for full details.
+  //       {' '}
+  //       <strong>
+  //         Update February 2022: these positions have been filled.
+  //       </strong>
+  //     </>
+  //   ),
+  // },
   {
     date: 'Aug 12, 2021',
     title: 'A new version of ProHits-viz is released',

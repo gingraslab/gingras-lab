@@ -164,7 +164,7 @@ const Resources = ({ data }) => (
               </div>
             </li>
             <li>
-              <h3>ProHits 4.0: Ready for DIA analysis</h3>
+              <h3>ProHits 8.0: Ready for DIA analysis</h3>
               <p>
                 Guomin (Frank) Liu and colleagues in the Gingras,
                 {' '}
@@ -183,7 +183,7 @@ const Resources = ({ data }) => (
                 {' '}
                 <Link to="http://www.raughtlab.ca/homev2.php">Raught</Link>
                 {' '}
-                labs release a major update to the ProHits LIMS. In ProHits 4.0, Data Independent
+                labs release a major update to the ProHits LIMS. In ProHits 8.0, Data Independent
                 Acquisition (DIA) is handled through
                 {' '}
                 <Link to="http://diaumpire.sourceforge.net/">DIA-Umpire</Link>
@@ -198,7 +198,7 @@ const Resources = ({ data }) => (
                 {' '}
                 <Link to=" http://saint-apms.sourceforge.net/Main.html">SAINT-intensity</Link>
                 .
-                ProHits 4.0 also facilitates data deposition in public repositories such as
+                ProHits 8.0 also facilitates data deposition in public repositories such as
                 MassIVE and the transfer of data to new visualization tools we have developed.
               </p>
               <ul>
