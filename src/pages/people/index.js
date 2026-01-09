@@ -38,6 +38,11 @@ export const query = graphql`{
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
+  christmas2022: file(relativePath: {eq: "group/2022-christmas.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
+    }
+  }
   centerIsland2023: file(relativePath: {eq: "group/2023-center-island.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
@@ -53,12 +58,22 @@ export const query = graphql`{
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
+  christmas2023: file(relativePath: {eq: "group/2023-christmas.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
+    }
+  }
   christmas2024: file(relativePath: {eq: "group/2024-christmas.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
   }
   LTRIRetreat2025: file(relativePath: {eq: "group/2025-LTRI-retreat.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
+    }
+  }
+  christmas2025: file(relativePath: {eq: "group/2025-christmas.jpg"}) {
     childImageSharp {
       gatsbyImageData(formats: [JPG, WEBP], layout: FULL_WIDTH, placeholder: BLURRED)
     }
@@ -106,6 +121,12 @@ const People = ({ data }) => {
             />
           </header>
           <div className="people__photos">
+            <figure className="christmas-2025">
+              <GatsbyImage
+                image={data.christmas2025.childImageSharp.gatsbyImageData}
+                alt="Christmas party, 2025" />
+              <figcaption>Christmas party, 2025.</figcaption>
+            </figure>
             <figure className="LTRI-retreat-2025">
               <GatsbyImage
                 image={data.LTRIRetreat2025.childImageSharp.gatsbyImageData}
@@ -117,6 +138,12 @@ const People = ({ data }) => {
                 image={data.christmas2024.childImageSharp.gatsbyImageData}
                 alt="Christmas party, 2024" />
               <figcaption>Christmas party, 2024.</figcaption>
+            </figure>
+            <figure className="christmas-2023">
+              <GatsbyImage
+                image={data.christmas2023.childImageSharp.gatsbyImageData}
+                alt="Christmas party, 2023" />
+              <figcaption>Christmas party, 2023.</figcaption>
             </figure>
             <figure className="LTRI-retreat-2023">
               <GatsbyImage
@@ -135,6 +162,12 @@ const People = ({ data }) => {
                 image={data.centerIsland2023.childImageSharp.gatsbyImageData}
                 alt="Center Island 2023" />
               <figcaption>Center Island, 2023.</figcaption>
+            </figure>
+            <figure className="christmas-2022">
+              <GatsbyImage
+                image={data.christmas2022.childImageSharp.gatsbyImageData}
+                alt="Christmas party, 2022" />
+              <figcaption>Christmas party, 2022.</figcaption>
             </figure>
             <figure className="appreciation-day-2018">
               <GatsbyImage
@@ -195,6 +228,11 @@ People.propTypes = {
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
+    christmas2022: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        gatsbyImageData: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
     centerIsland2023: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         gatsbyImageData: PropTypes.shape({}).isRequired,
@@ -210,12 +248,22 @@ People.propTypes = {
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
+    christmas2023: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        gatsbyImageData: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
     christmas2024: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
     }).isRequired,
     LTRIRetreat2025: PropTypes.shape({
+      childImageSharp: PropTypes.shape({
+        gatsbyImageData: PropTypes.shape({}).isRequired,
+      }).isRequired,
+    }).isRequired,
+    christmas2025: PropTypes.shape({
       childImageSharp: PropTypes.shape({
         gatsbyImageData: PropTypes.shape({}).isRequired,
       }).isRequired,
